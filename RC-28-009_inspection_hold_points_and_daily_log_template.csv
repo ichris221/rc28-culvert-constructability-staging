@@ -1,0 +1,10 @@
+record_id,stage_id,activity_code,hold_point_required,trigger_condition,inspector_role,required_record,signoff_required,dependency,status_note
+HP-001,STG-1,UTILITY_LOCATE,yes,before sawcutting,Utility Coordinator,utility locate ticket,yes,traffic setup,Hold point before pavement sawcut.
+HP-002,STG-2,BYPASS_OPERATIONAL,yes,before culvert removal,Pump Supervisor,bypass start log,yes,utility locate complete,Bypass must operate before flow path is interrupted.
+HP-003,STG-3,BASE_GRADE,yes,before precast placement,Construction Inspector,grade check form,yes,excavation complete,Base grade acceptance hold point.
+HP-004,STG-3,CULVERT_ALIGNMENT,yes,after all box units placed,,alignment check sheet,yes,precast placement complete,Inspector role is blank.
+HP-005,STG-4,JOINT_SEAL,yes,before backfill,QA Inspector,joint seal checklist,yes,box units aligned,Joint seal hold point.
+HP-006,STG-4,CURE_VERIFICATION,yes,before traffic load,Construction Inspector,cure verification log,yes,headwall concrete placed,Cure duration must be checked against File 007.
+HP-007,ALL,SEDIMENT_CONTROL,yes,daily before demobilization,Environmental Monitor,sediment inspection log,yes,permit active,Daily permit hold point.
+HP-002-DUP,STG-2,BYPASS_OPERATIONAL,yes,before culvert removal,Pump Supervisor,bypass start log,yes,utility locate complete,Duplicate of HP-002.
+DLT-001,ALL,DAILY_LOG_FIELDS,no,each work day,Site Superintendent,daily log template,no,active work day,"Fields: weather, crew, equipment, work area, quantities, visitors, incidents, photos, open issues."

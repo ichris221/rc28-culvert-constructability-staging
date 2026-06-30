@@ -1,0 +1,14 @@
+record_id,category,location_or_system,measurement_type,source_value,unit,calculation_or_reference,status_note
+BP-001,flow,Mill Creek Tributary,dry_weather_flow,0.08,m3/s,observed base flow,Informational source flow.
+BP-002,flow,Mill Creek Tributary,wet_weather_flow,0.24,m3/s,24 hour observed runoff flow,Informational source flow.
+BP-003,flow,Mill Creek Tributary,construction_check_flow,0.42,m3/s,permit design check flow,Flow used for temporary bypass sizing.
+BP-004,factor,bypass system,reserve_factor,1.2,ratio,project-specific reserve factor,Applied to BP-003.
+BP-005,calculated_requirement,bypass system,required_operating_capacity,0.504,m3/s,0.42 x 1.20,Required operating bypass capacity.
+PUMP-001,pump,pump A,duty_capacity,0.18,m3/s,vendor tag on pump skid,Primary pump.
+PUMP-002,pump,pump B,duty_capacity,0.18,m3/s,vendor tag on pump skid,Primary pump.
+PUMP-003,pump,pump C,standby_capacity,0.18,m3/s,vendor tag on pump skid,"Standby pump, not counted as duty capacity."
+PUMP-004,pump_set,primary pump set,total_duty_capacity,0.36,m3/s,PUMP-001 + PUMP-002,Below BP-005 required capacity.
+PUMP-005,pump_set,all pumps,total_with_standby,0.54,m3/s,PUMP-001 + PUMP-002 + PUMP-003,Includes standby unit and should not be counted as operating duty capacity.
+PUMP-006,hose,suction header,suction_hose_diameter,,mm,required for pump setup check,Required diameter field blank.
+PUMP-007,generator,pump generator,fuel_tank_setback,12.0,m,site sketch note,Conflicts with 15 m fuel setback in project brief and environmental permit.
+BP-003-DUP,flow,Mill Creek Tributary,construction_check_flow,0.42,m3/s,duplicate export of BP-003,Duplicate flow record.

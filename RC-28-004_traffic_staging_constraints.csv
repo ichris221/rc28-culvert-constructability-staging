@@ -1,0 +1,10 @@
+record_id,stage_id,constraint_type,location_or_area,supplied_value,unit,time_window,status_note,related_record
+TS-001,ALL,minimum_open_lane_width,Brookside Avenue,3.2,m,all open-lane periods,Minimum single-lane operating width.,SC-009
+TS-002,ALL,peak_period_lane_status,Brookside Avenue,one lane open,text,07:00-09:00 and 16:00-18:00,Matches peak traffic constraint.,SC-002
+TS-003,STG-3,full_closure_window,culvert crossing,allowed,text,2026-09-10 22:00-02:00,Conflicts with project brief full-road-closure prohibition and standard work hours.,SC-001; SC-003
+TS-004,STG-2,single_lane_closure_duration,west lane,6.5,hr,09:00-15:30,Within available daytime window but limits excavation sequence.,SC-002
+TS-005,STG-4,temporary_pedestrian_width,north sidewalk detour,1.2,m,continuous during sidewalk interruption,Potential conflict with permit pedestrian width requirement.,PC-005
+TS-006,STG-2,residential_access_interval,driveways 18-24,4.0,hr,work hours,Access interval listed for construction staging.,SC-005
+TS-007,STG-1,bus_stop_status,stop B-14,active,text,07:00-18:00,No relocation approval attached.,
+TS-008,STG-1,bus_stop_detour_approval,stop B-14,,text,before traffic setup,Required field is blank.,TS-007
+TS-002-DUP,ALL,peak_period_lane_status,Brookside Avenue,one lane open,text,07:00-09:00 and 16:00-18:00,Duplicate export row matching TS-002.,TS-002
